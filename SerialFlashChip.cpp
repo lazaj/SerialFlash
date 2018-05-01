@@ -39,7 +39,7 @@ uint8_t SerialFlashChip::busy = 0;
 static volatile IO_REG_TYPE *cspin_basereg;
 static IO_REG_TYPE cspin_bitmask;
 
-static SPIClass& SPIPORT = SPI;
+static SPIClass& SPIPORT = SPI2;
 
 #define FLAG_32BIT_ADDR		0x01	// larger than 16 MByte address
 #define FLAG_STATUS_CMD70	0x02	// requires special busy flag check
